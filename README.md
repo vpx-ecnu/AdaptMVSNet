@@ -44,3 +44,19 @@ root_directory
 * Download pro-processed [DTU's training set](https://polybox.ethz.ch/index.php/s/ugDdJQIuZTk4S35).
 * In train.sh, set MVS_TRAINING as the root directory of the converted dataset; set --output_path as the directory to store the checkpoints.
 * Train the model by running sh train.sh.
+
+```
+@article{JIANG2023128,
+title = {AdaptMVSNet: Efficient Multi-View Stereo with adaptive convolution and attention fusion},
+journal = {Computers & Graphics},
+volume = {116},
+pages = {128-138},
+year = {2023},
+issn = {0097-8493},
+doi = {https://doi.org/10.1016/j.cag.2023.08.014},
+url = {https://www.sciencedirect.com/science/article/pii/S0097849323001838},
+author = {Pengfei Jiang and Xiaoyan Yang and Yuanjie Chen and Wenjie Song and Yang Li},
+keywords = {Multi-view stereo, 3D reconstruction, Computers vision, Deep learning},
+abstract = {Multi-View Stereo (MVS) is a crucial technique for reconstructing the geometric structure of a scene, given the known camera parameters. Previous deep learning-based MVS methods have mainly focused on improving the reconstruction quality but overlooked the running efficiency during the actual algorithm deployment. For example, deformable convolutions have been introduced to improve the accuracy of the reconstruction results further, however, its inability for parallel optimization caused low inference speed. In this paper, we propose AdaptMVSNet which is device-friendly and reconstruction-efficient, while preserving the original results. To this end, adaptive convolution is introduced to significantly improve the efficiency in speed and metrics compared to current methods. In addition, an attention fusion module is proposed to blend features from adaptive convolution and the feature pyramid network. Our experiments demonstrate that our proposed approach achieves state-of-the-art performance and is almost 2× faster than the recent fastest MVS method. We will release our source code.}
+}
+```
